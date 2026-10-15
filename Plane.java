@@ -12,7 +12,6 @@ public class Plane {
 	}
 	
 	public Plane(int planeID, String model, int totalCapacity, MaintananceStatus maintananceStatus) {
-		super();
 		this.planeID = planeID;
 		this.model = model;
 		this.totalCapacity = totalCapacity;
