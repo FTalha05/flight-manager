@@ -1,4 +1,5 @@
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 public class Flight {
 	public int flightID;
@@ -8,6 +9,7 @@ public class Flight {
 	public Pilot firstPilot;
 	public Pilot secondPilot;
 	public Plane plane;
+	public ArrayList<Ticket> tickets;
 	public enum Status {
 		SCHEDULED, DELAYED, IN_AIR, LANDED, CANCELLED
 	}
