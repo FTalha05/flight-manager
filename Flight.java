@@ -19,6 +19,8 @@ public class Flight {
 		this.flightID = flightID;
 		this.startingLocation = startingLocation;
 		this.arrival = arrival;
+		/*this.destination = destination;
+		this.departure = departure;*/
 		this.status = status;
 		this.firstPilot = firstPilot;
 		this.secondPilot = secondPilot;
