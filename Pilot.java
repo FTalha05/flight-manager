@@ -18,4 +18,12 @@ public class Pilot {
 	public void UpdateRank(Rank newRank) {
 		this.rank = newRank;
 	}
+	
+	public boolean isValidPilot() {
+		if (pilotID <= 0) return false;
+		if (name == null || name.isBlank()) return false;
+		if (licenseNumber == null || !licenseNumber.startsWith("LIC")) return false;
+		if (rank == null) return false;
+		return true;
+	}
 }

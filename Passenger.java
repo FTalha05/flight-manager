@@ -17,6 +17,7 @@ public class Passenger {
 		this.email = email;
 		this.passportNumber = passportNumber;
 		this.phone = phone;
+		tickets = new ArrayList<Ticket>();
 	}
 	
 	public void displayBookingHistory() {

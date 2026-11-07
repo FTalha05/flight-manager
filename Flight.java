@@ -19,11 +19,14 @@ public class Flight {
 		this.flightID = flightID;
 		this.startingLocation = startingLocation;
 		this.arrival = arrival;
+		this.destination = destination;
+		this.departure = departure;
 		this.status = status;
 		this.firstPilot = firstPilot;
 		this.secondPilot = secondPilot;
 		this.plane = null; // Plane needs to be added manually to make the sure flight time is available.
 		// Starting location and destination added using methods to also add them to the airport object's data.
+		tickets = new ArrayList<Ticket>();
 		changeStartingLocation(startingLocation);
 		changeDestination(destination);
 	}

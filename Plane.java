@@ -16,6 +16,7 @@ public class Plane {
 		this.model = model;
 		this.totalCapacity = totalCapacity;
 		this.maintananceStatus = maintananceStatus;
+		flights = new ArrayList<Flight>();
 	}
 	
 	public boolean checkAvailability(LocalDateTime start, LocalDateTime end) {

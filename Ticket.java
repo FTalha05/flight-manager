@@ -20,6 +20,7 @@ public class Ticket {
 		this.price = price;
 		this.status = Status.UNCONFIRMED;
 		
+		flight.tickets.add(this);
 		passenger.tickets.add(this);
 	}
 	
@@ -37,6 +38,7 @@ public class Ticket {
 				return false;
 			}
 		}
+		this.seatNumber = newSeat;
 		return true;
 	}
 	

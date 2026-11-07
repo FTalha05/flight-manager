@@ -15,6 +15,7 @@ public class Airport {
 		this.city = city;
 		this.country = country;
 		this.timezone = timezone;
+		flights = new ArrayList<Flight>();
 	}
 	
 	public void addFlight(Flight flight) {
